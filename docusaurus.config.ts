@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://matobio-docs.github.io',
+  url: 'https://matobio.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/matobio-docs/',
@@ -37,6 +37,22 @@ const config: Config = {
     locales: ['en'],
   },
 
+
+
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: "es",
+        highlightSearchTermsOnTargetPage: true,
+      },
+    ],
+    '@docusaurus/theme-mermaid', // ← activar tema Mermaid
+  ],
+  markdown: {
+    mermaid: true,
+  },
   presets: [
     [
       'classic',
@@ -147,6 +163,8 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+
+
 };
 
 export default config;
