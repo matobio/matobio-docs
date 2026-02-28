@@ -87,7 +87,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
@@ -101,13 +100,19 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'matobioDocsSidebar',
+          position: 'left',
+          label: 'My Docs',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tutorial Docusaurus',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/matobio/matobio-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -120,8 +125,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Tutorial Docusaurus',
+              to: '/docs/docusaurus-tutorial/intro',
             },
           ],
         },
@@ -151,12 +156,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/matobio/matobio-docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} matobio-docs, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
