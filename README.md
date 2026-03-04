@@ -4,8 +4,10 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## Installation
 
+Install Node v25 --> https://nodejs.org/es/download
+
 ```bash
-npm
+npm install
 ```
 
 ## Local Development
